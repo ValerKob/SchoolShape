@@ -13,8 +13,9 @@ class RegisterController extends Controller
         $post = DB::table('applications')->get();
 
         $typeTime = $req->typeTime;
+        $dataZa = 1;
 
-        return view('pages.main.index', compact('post', 'typeTime'));
+        return view('pages.main.index', compact('post', 'typeTime', 'dataZa'));
     }
 
     public function addCheck(RegisterRequest $req)
@@ -24,6 +25,14 @@ class RegisterController extends Controller
         $tel = $req->tel;
         $dataZa = $req->dataZa;
         $typeTime = $req->typeTime;
+
+        if ($dataZa == 0) {
+            $post = DB::table('applications')->get();
+
+            $typeTime = $req->typeTime;
+
+            return view('pages.main.index', compact('post', 'typeTime', 'dataZa'));
+        }
 
         DB::table('applications')->insert(['fio' => $fio, 'email' => $email, 'tel' => $tel, 'dataZa' => $dataZa, 'typeTime' => $typeTime]);
 

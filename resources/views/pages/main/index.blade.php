@@ -120,14 +120,14 @@ foreach ($post as $db) {
         </div>
 
         <div class="card">
-            <h3 style="margin-bottom: 0;">Запись, на экскурсию в Среднюю школу № 7</h3>
-            <p><b>Время</b> в {{ $typeTime }}:00<br>
+            <h4 style="margin-bottom: 10;">Запись, на экскурсию в Среднюю школу № 7</h4>
+            <p><b>Время</b> в {{ $typeTime }}:00<br><br>
                 <b>Адрес:</b> г. Архангельск, территориальный округ Майская горка ул.
-                Карпогорская, д. 36<br>
+                Карпогорская, д. 36<br><br>
                 <b>Контакты:</b>
-                8 (921) 720 79-69,<br>
+                8 (921) 720 79-69,<br><br>
                 <b>Email:</b> mbous7@inbox.ru
-            <div style="display: flex; margin-top: 20px; border-top: 1px solid #000; padding: 30px 0 0 0;">
+            <div style="display: flex; margin-top: 10px; border-top: 1px solid #000; padding: 15px 0 0 0;">
                 <div style="color: red; ">* Обязательные данные</div>
             </div>
             </p>
@@ -159,15 +159,15 @@ foreach ($post as $db) {
 
         <div class="card">
             <div style="display: flex; color: #ccc">
-                <div class="cardCircle"></div>
+                <div class="cardCircle" style="margin-top: 5px;"></div>
                 - Колличество оставшихся мест на определённый день
             </div>
             <div style="display: flex; color: #ccc">
-                <div class="cardCircle" style="background-color: red; width: 15px; height: 15px;"></div>
+                <div class="cardCircle" style="background-color: red; margin-top: 5px; width: 15px; height: 15px;"></div>
                 - Выходные дни
             </div>
             <div style="display: flex; color: #ccc">
-                <div class="cardCircle" style="background-color: #bd34ec; width: 15px; height: 15px;"></div>
+                <div class="cardCircle" style="background-color: #bd34ec; margin-top: 5px; width: 15px; height: 15px;"></div>
                 - Мест Нету
             </div>
         </div>
@@ -175,8 +175,10 @@ foreach ($post as $db) {
             <div class="calendar">
                 <div class="month" style="display: flex; flex-direction: column;">
                     <?php
-                    if (isset($_GET['dateZaProv'])) {
+                    if ($dataZa == 0) {
                         echo '<div style="color: red;">Пожалуйста выберите дату!!!</div>';
+                    } else {
+                        echo '<div>Выберите удобную для вас дату!</div>';
                     }
                     ?>
                     <div>Август <span class="year">2023</span></div>
