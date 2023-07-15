@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <!-- main css -->
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
 <body>

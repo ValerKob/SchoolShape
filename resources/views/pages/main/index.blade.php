@@ -5,14 +5,6 @@
 @section('content')
 <?php
 
-// $connect = mysqli_connect('localhost', 'root', '', 'calendarSchool');
-
-// $post = mysqli_query($connect, "SELECT * FROM `applications`");
-
-// while ($data = mysqli_fetch_assoc($post)) {
-//     $array_Post[] = $data;
-// }
-
 $number1 = 0;
 $number2 = 0;
 $number3 = 0;
@@ -46,68 +38,70 @@ $number30 = 0;
 $number31 = 0;
 
 foreach ($post as $db) {
-    if ($db->dataZa == 1)
-        $number1++;
-    if ($db->dataZa == 2)
-        $number2++;
-    if ($db->dataZa == 3)
-        $number3++;
-    if ($db->dataZa == 4)
-        $number4++;
-    if ($db->dataZa == 5)
-        $number5++;
-    if ($db->dataZa == 6)
-        $number6++;
-    if ($db->dataZa == 7)
-        $number7++;
-    if ($db->dataZa == 8)
-        $number8++;
-    if ($db->dataZa == 9)
-        $number9++;
-    if ($db->dataZa == 10)
-        $number10++;
-    if ($db->dataZa == 11)
-        $number11++;
-    if ($db->dataZa == 12)
-        $number12++;
-    if ($db->dataZa == 13)
-        $number13++;
-    if ($db->dataZa == 14)
-        $number14++;
-    if ($db->dataZa == 15)
-        $number15++;
-    if ($db->dataZa == 16)
-        $number16++;
-    if ($db->dataZa == 17)
-        $number17++;
-    if ($db->dataZa == 18)
-        $number18++;
-    if ($db->dataZa == 19)
-        $number19++;
-    if ($db->dataZa == 20)
-        $number20++;
-    if ($db->dataZa == 21)
-        $number21++;
-    if ($db->dataZa == 22)
-        $number22++;
-    if ($db->dataZa == 23)
-        $number23++;
-    if ($db->dataZa == 24)
-        $number24++;
-    if ($db->dataZa == 25)
-        $number25++;
-    if ($db->dataZa == 26)
-        $number26++;
-    if ($db->dataZa == 27)
-        $number27++;
-    if ($db->dataZa == 28)
-        $number28++;
-    if ($db->dataZa == 29)
-        $number29++;
-    if ($db->dataZa == 30)
-        $number30++;
-    if ($db->dataZa == 31)
-        $number31++;
+    if ($db->typeTime == $typeTime) {
+        if ($db->dataZa == 1)
+            $number1++;
+        if ($db->dataZa == 2)
+            $number2++;
+        if ($db->dataZa == 3)
+            $number3++;
+        if ($db->dataZa == 4)
+            $number4++;
+        if ($db->dataZa == 5)
+            $number5++;
+        if ($db->dataZa == 6)
+            $number6++;
+        if ($db->dataZa == 7)
+            $number7++;
+        if ($db->dataZa == 8)
+            $number8++;
+        if ($db->dataZa == 9)
+            $number9++;
+        if ($db->dataZa == 10)
+            $number10++;
+        if ($db->dataZa == 11)
+            $number11++;
+        if ($db->dataZa == 12)
+            $number12++;
+        if ($db->dataZa == 13)
+            $number13++;
+        if ($db->dataZa == 14)
+            $number14++;
+        if ($db->dataZa == 15)
+            $number15++;
+        if ($db->dataZa == 16)
+            $number16++;
+        if ($db->dataZa == 17)
+            $number17++;
+        if ($db->dataZa == 18)
+            $number18++;
+        if ($db->dataZa == 19)
+            $number19++;
+        if ($db->dataZa == 20)
+            $number20++;
+        if ($db->dataZa == 21)
+            $number21++;
+        if ($db->dataZa == 22)
+            $number22++;
+        if ($db->dataZa == 23)
+            $number23++;
+        if ($db->dataZa == 24)
+            $number24++;
+        if ($db->dataZa == 25)
+            $number25++;
+        if ($db->dataZa == 26)
+            $number26++;
+        if ($db->dataZa == 27)
+            $number27++;
+        if ($db->dataZa == 28)
+            $number28++;
+        if ($db->dataZa == 29)
+            $number29++;
+        if ($db->dataZa == 30)
+            $number30++;
+        if ($db->dataZa == 31)
+            $number31++;
+    }
 }
 ?>
 <!--================ Start Home Banner Area =================-->

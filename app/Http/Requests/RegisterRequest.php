@@ -28,6 +28,9 @@ class RegisterRequest extends FormRequest
             'tel' => '',
             'dataZa' => '',
             'typeTime' => '',
+            'login' => '',
+            'pass' => '',
+            'deleteUser' => '',
         ];
     }
 }

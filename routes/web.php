@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('', 'pages.newdate.index')->name('main');
+Route::view('login', 'pages.login.index')->name('login');
 
 Route::post('addTime', [RegisterController::class, 'checkDate'])->name('checkDate');
 Route::post('addCheck', [RegisterController::class, 'addCheck'])->name('addCheck');
-
-// Route::view('checkreq', 'pages.checkreq.index', compact('post'))->name('main');
+Route::post('adminPanel', [RegisterController::class, 'adminPanel'])->name('adminPanel');
+Route::post('deleteUser', [RegisterController::class, 'deleteUser'])->name('deleteUser');
+Route::post('serachTime', [RegisterController::class, 'serachTime'])->name('serachTime');
