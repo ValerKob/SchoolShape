@@ -37,6 +37,17 @@ class RegisterController extends Controller
 
         DB::table('applications')->insert(['fio' => $fio, 'email' => $email, 'tel' => $tel, 'dataZa' => $dataZa, 'typeTime' => $typeTime]);
 
+        $post = DB::table('applications')->get();
+
+        foreach ($post as $db) {
+            if ($db->fio == $fio && $db->email == $email) {
+                setcookie("UserID", $db->id, time() + 3600 * 24 * 30);
+                setcookie("UserdataZa", $dataZa, time() + 3600 * 24 * 30);
+                setcookie("UsertypeTime", $typeTime, time() + 3600 * 24 * 30);
+                // dd($_COOKIE["UserID"], $_COOKIE["UserdataZa"], $_COOKIE["UsertypeTime"]);
+            }
+        }
+
         return view('pages.final.index', compact('dataZa', 'typeTime'));
     }
 
@@ -74,5 +85,17 @@ class RegisterController extends Controller
 
         $post = DB::table('applications')->get();
         return view('pages.Ad134Qfg5d.index', compact('post', 'typeTime'));
+    }
+
+    public function newDate(RegisterRequest $req)
+    {
+        $id = $req->id;
+        DB::table('applications')->delete($id);
+
+        setcookie("UserID", 0, time() + 3600 * 24 * 30);
+        setcookie("UserdataZa", 0, time() + 3600 * 24 * 30);
+        setcookie("UsertypeTime", 0, time() + 3600 * 24 * 30);
+
+        return view('pages.newdate.index');
     }
 }

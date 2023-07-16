@@ -22,3 +22,4 @@ Route::post('addCheck', [RegisterController::class, 'addCheck'])->name('addCheck
 Route::post('adminPanel', [RegisterController::class, 'adminPanel'])->name('adminPanel');
 Route::post('deleteUser', [RegisterController::class, 'deleteUser'])->name('deleteUser');
 Route::post('serachTime', [RegisterController::class, 'serachTime'])->name('serachTime');
+Route::post('newDate', [RegisterController::class, 'newDate'])->name('newDate');
