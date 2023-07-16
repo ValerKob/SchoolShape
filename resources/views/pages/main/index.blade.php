@@ -413,7 +413,7 @@ foreach ($post as $db) {
                     <!-- <button class="today">
           <time>18</time>
         </button> -->
-                    <button type="button" class="green butColModal19" value="19" style="opacity: .7">
+                    <button type="button" class="red butColModal19" value="19">
                         <time>19</time>
                     </button>
                     <button type="button" class="red" value="20">
@@ -487,7 +487,7 @@ foreach ($post as $db) {
                     <button type="button" class="red" value="26">
                         <time>26</time>
                     </button>
-                    <button type="button" class="green butColModal27" value="27" style="opacity: .7">
+                    <button type="button" class="red butColModal27" value="27">
                         <time>27</time>
                     </button>
                     <button type="button" id="butCol" value="28" <?php
