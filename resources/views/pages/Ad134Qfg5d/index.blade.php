@@ -38,11 +38,11 @@
             if ($db->typeTime == $typeTime) {
                 echo '
                 <li class="table-row">
-                    <div class="col col-1" data-label="ID">' . $db->id . '</div>
-                    <div class="col col-2" data-label="ФИО">' . $db->fio . '</div>
-                    <div class="col col-2" data-label="Телефон"> <br>' . $db->email . '</div>
-                    <div class="col col-2" data-label="Email">' . $db->tel . '</div>
-                    <div class="col col-2" data-label="Дата записи"> дата: ' . $db->dataZa . '.08.2023 <br>время в: ' . $db->typeTime . ':00</div>
+                    <div class="col col-1" data-label="ID:">' . $db->id . '</div>
+                    <div class="col col-2" data-label="ФИО:">' . $db->fio . '</div>
+                    <div class="col col-2" data-label="Email:"> <br class="dNoneMobule">' . $db->email . '</div>
+                    <div class="col col-2" data-label="Телефон:">' . $db->tel . '</div>
+                    <div class="col col-2" data-label="Дата&nbspзаписи:"> дата:&nbsp' . $db->dataZa . '.08.2023 <br>время&nbspв:&nbsp' . $db->typeTime . ':00</div>
                     <form action="deleteUser" method="POST">' ?>
                 @csrf
         <?php echo '<input type="number" name="deleteUser" value="' . $db->id . '" style="display: none;" />

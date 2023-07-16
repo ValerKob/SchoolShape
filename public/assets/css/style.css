@@ -116,6 +116,10 @@ body {
   color: #fff;
 }
 
+.calendar .dates button.green {
+  background: #00ff33;
+}
+
 .red:hover {
   background-color: red;
 }
@@ -238,7 +242,7 @@ input {
   border: 0;
   z-index: 1;
   background-color: transparent;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #c2c2c2;
   font: inherit;
   font-size: 1.125rem;
   padding: 0.25rem 0;
@@ -298,3 +302,74 @@ input {
   margin-right: 10px;
 }
 
+/* Modal */
+.modalNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+
+  width: 0;
+  height: 0;
+
+  top: -100%;
+  left: -100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.modalNew.active {
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+}
+
+.modalNewCard {
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 15px;
+}
+
+.modalNewHeader {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.closeModaleNewBtn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.closeModaleNewBtn::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.closeModaleNewBtn::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(-45deg);
+}
