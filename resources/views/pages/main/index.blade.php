@@ -112,7 +112,7 @@ foreach ($post as $db) {
         <div class="card">
             <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
         </div>
-        <div class="card" style="width: 425px; margin: 0 auto;
+        <div style="width: 425px; margin: 0 auto;
   display: block;
   background-color: none;
   border-radius: none;
