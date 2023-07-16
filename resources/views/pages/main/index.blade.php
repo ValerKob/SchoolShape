@@ -112,6 +112,10 @@ foreach ($post as $db) {
         <div class="card">
             <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
         </div>
+        <div style="width: 425px; margin: 0 auto;">
+            <a class="action-button" href="{{ route('main') }}" style="max-width: 230px; color: #fff; text-decoration: none; padding: 15px 25px;">
+                < Вернуться Назад</a>
+        </div>
         <div class="card">
             <h4 style="margin-bottom: 10;">Запись, на экскурсию в Среднюю школу № 7</h4>
             <p><b>Время</b> в {{ $typeTime }}:00<br><br>

@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-<div class="cotainer">
+<div class="container">
     <!-- <div class="card">
         <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
     </div> -->

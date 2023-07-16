@@ -10,7 +10,7 @@ if (isset($_COOKIE["UserID"])) {
     if ($_COOKIE["UserID"] != 0) {
 
 ?>
-        <div class="cotainer">
+        <div class="container">
             <div class="card">
                 <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
             </div>
@@ -53,7 +53,7 @@ if (isset($_COOKIE["UserID"])) {
     } else {
 
     ?>
-        <div class="cotainer">
+        <div class="container">
             <div class="card">
                 <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
             </div>
@@ -106,7 +106,7 @@ if (isset($_COOKIE["UserID"])) {
     }
 } else {
     ?>
-    <div class="cotainer">
+    <div class="container">
         <div class="card">
             <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
         </div>
