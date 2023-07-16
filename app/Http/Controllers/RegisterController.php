@@ -92,9 +92,9 @@ class RegisterController extends Controller
         $id = $req->id;
         DB::table('applications')->delete($id);
 
-        setcookie("UserID", 0, time() + 3600 * 24 * 30);
-        setcookie("UserdataZa", 0, time() + 3600 * 24 * 30);
-        setcookie("UsertypeTime", 0, time() + 3600 * 24 * 30);
+        $_COOKIE["UserID"] = 0;
+        $_COOKIE["UserdataZa"] = 0;
+        $_COOKIE["UsertypeTime"] = 0;
 
         return view('pages.newdate.index');
     }
