@@ -120,6 +120,10 @@ body {
   background: #00ff33;
 }
 
+.calendar .dates button.green.active {
+  background: #0a3d62;
+}
+
 .red:hover {
   background-color: red;
 }
