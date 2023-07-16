@@ -18,6 +18,10 @@
         @csrf
         <style>
             .action-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 cursor: pointer;
                 height: 60px;
                 padding: 0;
@@ -26,7 +30,14 @@
                 margin: 15px auto 0;
             }
         </style>
-        <button type="submit" class="action-button">Выход</button>
+        <button type="submit" class="action-button card" style="
+  display: flex;
+  
+  background-color: none;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;">Выход</button>
     </form>
 
 </div>

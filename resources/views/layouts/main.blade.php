@@ -24,6 +24,16 @@
     <!-- Fooret -->
     @include('includes.main.footer')
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+        function timeCard() {
+            let card = document.querySelectorAll('.card');
+
+            for (i = 0; i < card.length; i++) {
+                card[i].classList.add('active');
+            }
+        }
+        setInterval(timeCard, 150);
+    </script>
 </body>
 
 </html>

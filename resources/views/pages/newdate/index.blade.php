@@ -53,12 +53,13 @@ if (isset($_COOKIE["UserID"])) {
     } else {
 
     ?>
+
         <div class="container">
-            <div class="card">
+            <div class="card" id="card1">
                 <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
             </div>
 
-            <div class="card">
+            <div class="card" id="card2">
                 <h4 style="margin-bottom: 10;">Запись, на экскурсию в Среднюю школу № 7</h4>
                 <b>Адрес:</b> г. Архангельск, территориальный округ Майская горка ул.
                 Карпогорская, д. 36<br><br>
@@ -68,7 +69,7 @@ if (isset($_COOKIE["UserID"])) {
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card" id="card3">
                 <h4 style="margin-bottom: 0;">Выберите удобное для вас время!</h4>
             </div>
 
@@ -82,49 +83,28 @@ if (isset($_COOKIE["UserID"])) {
                     margin: 15px auto 0;
                 }
             </style>
-
-            <div class="card">
+            <div class="card" id="card4">
                 <h5 style="margin-bottom: 0;">Записаться на 18:00</h5>
-                <form action="addTime" method="post">
-                    @csrf
-                    <input type="text" name="typeTime" value="18" class="d-none">
-                    <button type="submit" class="action-button">Выбрать</button>
-                </form>
+                <form action="addTime" method="post">@csrf <input type="text" name="typeTime" value="18" class="d-none"><button type="submit" class="action-button">Выбрать</button></form>
             </div>
-
-            <div class="card">
+            <div class="card" id="card5">
                 <h5 style="margin-bottom: 0;">Записаться на 19:00</h5>
-                <form action="addTime" method="post">
-                    @csrf
-                    <input type="text" name="typeTime" value="19" class="d-none">
-                    <button type="submit" class="action-button">Выбрать</button>
-                </form>
+                <form action="addTime" method="post">@csrf <input type="text" name="typeTime" value="19" class="d-none"><button type="submit" class="action-button">Выбрать</button></form>
             </div>
-        </div>
-
-    <?php
-    }
-} else {
-    ?>
-    <div class="container">
+        </div><?php
+            }
+        } else {
+                ?><div class="container">
+        <div class="card"><img style="border-radius: 10px;" src="../assets/images/head.jpg" alt=""></div>
         <div class="card">
-            <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
+            <h4 style="margin-bottom: 10;">Запись,
+                на экскурсию в Среднюю школу № 7</h4><b>Адрес:</b>г. Архангельск,
+            территориальный округ Майская горка ул. Карпогорская,
+            д. 36<br><br><b>Контакты:</b>8 (921) 720 79-69<br><br><b>Email:</b>mbous7@inbox.ru </p>
         </div>
-
         <div class="card">
-            <h4 style="margin-bottom: 10;">Запись, на экскурсию в Среднюю школу № 7</h4>
-            <b>Адрес:</b> г. Архангельск, территориальный округ Майская горка ул.
-            Карпогорская, д. 36<br><br>
-            <b>Контакты:</b>
-            8 (921) 720 79-69<br><br>
-            <b>Email:</b> mbous7@inbox.ru
-            </p>
+            <h4 style="margin-bottom: 0;">Выберите удобное для вас время !</h4>
         </div>
-
-        <div class="card">
-            <h4 style="margin-bottom: 0;">Выберите удобное для вас время!</h4>
-        </div>
-
         <style>
             .action-button {
                 cursor: pointer;
@@ -156,7 +136,7 @@ if (isset($_COOKIE["UserID"])) {
     </div>
 
 <?php
-}
+        }
 ?>
 
 @endsection

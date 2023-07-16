@@ -112,7 +112,13 @@ foreach ($post as $db) {
         <div class="card">
             <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
         </div>
-        <div style="width: 425px; margin: 0 auto;">
+        <div class="card" style="width: 425px; margin: 0 auto;
+  display: block;
+  background-color: none;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;">
             <a class="action-button" href="{{ route('main') }}" style="max-width: 230px; color: #fff; text-decoration: none; padding: 15px 25px;">
                 < Вернуться Назад</a>
         </div>
