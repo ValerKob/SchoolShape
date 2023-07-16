@@ -114,7 +114,7 @@ foreach ($post as $db) {
         </div>
         <div class="card" style="width: 425px; margin: 0 auto;
   display: block;
-  background-color: none;
+  background-color: rgba(153, 153, 153, .0);
   border-radius: none;
   border: none;
   box-shadow: none;
