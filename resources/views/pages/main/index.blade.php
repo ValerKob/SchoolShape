@@ -179,7 +179,7 @@ foreach ($post as $db) {
             </div>
             <div style="display: flex; color: #ccc">
                 <div class="cardCircle" style="background-color: #ffbf00; margin-top: 5px; min-width: 15px; height: 15px;"></div>
-                - В этот день нету экскурсий, так как запланировано другое мероприятие
+                - В этот день нет экскурсий, так как запланировано другое мероприятие
             </div>
         </div>
         <div class="text-center">
