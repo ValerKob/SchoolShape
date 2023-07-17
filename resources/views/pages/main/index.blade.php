@@ -165,22 +165,23 @@ foreach ($post as $db) {
                 <div class="cardCircle" style="margin-top: 5px; min-width: 15px;"></div>
                 - Колличество оставшихся мест на определённый день
             </div>
-            <div style="display: flex; color: #ccc">
+            <!-- <div style="display: flex; color: #ccc">
                 <div class="cardCircle" style="background-color: red; margin-top: 5px; width: 15px; height: 15px;"></div>
                 - Выходные дни
-            </div>
+            </div> -->
             <div style="display: flex; color: #ccc">
                 <div class="cardCircle" style="background-color: #bd34ec; margin-top: 5px; width: 15px; height: 15px;"></div>
                 - Мест Нет
             </div>
             <div style="display: flex; color: #ccc">
                 <div class="cardCircle" style="background-color: #00ff33; margin-top: 5px; min-width: 15px; height: 15px;"></div>
-                - Значимые события (при нажатий всплывает окно с информацией про этот день)
+                <!-- - Значимые события (при нажатий всплывает окно с информацией про этот день) -->
+                - Свободный день
             </div>
-            <div style="display: flex; color: #ccc">
+            <!-- <div style="display: flex; color: #ccc">
                 <div class="cardCircle" style="background-color: #ffbf00; margin-top: 5px; min-width: 15px; height: 15px;"></div>
                 - В этот день нет экскурсий, так как запланировано другое мероприятие
-            </div>
+            </div> -->
         </div>
         <div class="text-center">
             <div class="calendar">
@@ -211,26 +212,26 @@ foreach ($post as $db) {
                     <button type="button" id="butCol" value="1" <?php
                                                                 $del = 0;
                                                                 if ($del == 0) {
-                                                                    echo 'style="background: #ffbf00; color: #fff;" disabled';
+                                                                    echo 'style="background: none; color: #000;" disabled';
                                                                 }
                                                                 ?>>
                         <time>1</time>
                     </button>
-                    <button type="button" class="green butColModal2" id="butCol" value="2" <?php
-                                                                                            $del = 0;
-                                                                                            if ($del == 0) {
-                                                                                                echo 'style="background: #ffbf00; color: #fff;" disabled';
-                                                                                            }
-                                                                                            ?>>
+                    <button type="button" class="butColModal2" id="butCol" value="2" <?php
+                                                                                        $del = 0;
+                                                                                        if ($del == 0) {
+                                                                                            echo 'style="background: none; color: #000;"';
+                                                                                        }
+                                                                                        ?>>
                         <time>2</span>
                         </time>
                     </button>
-                    <button type="button" id="butCol" value="3" <?php
-                                                                $del = 30 - $number3;
-                                                                if ($del == 0) {
-                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                }
-                                                                ?>>
+                    <button type="button" class="green" id="butCol" value="3" <?php
+                                                                                $del = 30 - $number3;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>3
                             <span class="circle" <?php
                                                     $del = 30 - $number3;
@@ -240,12 +241,12 @@ foreach ($post as $db) {
                                                     ?>><? echo 30 - $number3 ?></span>
                         </time>
                     </button>
-                    <button type="button" id="butCol" value="4" <?php
-                                                                $del = 30 - $number4;
-                                                                if ($del == 0) {
-                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                }
-                                                                ?>>
+                    <button type="button" class="green" id="butCol" value="4" <?php
+                                                                                $del = 30 - $number4;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>4
                             <span class="circle" <?php
                                                     $del = 30 - $number4;
@@ -255,27 +256,27 @@ foreach ($post as $db) {
                                                     ?>><? echo 30 - $number4 ?></span>
                         </time>
                     </button>
-                    <button type="button" class="red" value="5">
+                    <button type="button" value="5">
                         <time>5</time>
                     </button>
-                    <button type="button" class="red" value="6">
+                    <button type="button" value="6">
                         <time>6</time>
                     </button>
                     <button type="button" id="butCol" value="7" <?php
                                                                 $del = 0;
                                                                 if ($del == 0) {
-                                                                    echo 'style="background: #ffbf00; color: #fff;" disabled';
+                                                                    echo 'style="background: none; color: #000;" disabled';
                                                                 }
                                                                 ?>>
                         <time>7</span>
                         </time>
                     </button>
-                    <button type="button" id="butCol" value="8" <?php
-                                                                $del = 30 - $number8;
-                                                                if ($del == 0) {
-                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                }
-                                                                ?>>
+                    <button type="button" class="green" id="butCol" value="8" <?php
+                                                                                $del = 30 - $number8;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>8
                             <span class="circle" <?php
                                                     $del = 30 - $number8;
@@ -285,12 +286,12 @@ foreach ($post as $db) {
                                                     ?>><? echo 30 - $number8 ?></span>
                         </time>
                     </button>
-                    <button type="button" id="butCol" value="9" <?php
-                                                                $del = 30 - $number9;
-                                                                if ($del == 0) {
-                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                }
-                                                                ?>>
+                    <button type="button" class="green" id="butCol" value="9" <?php
+                                                                                $del = 30 - $number9;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>9
                             <span class="circle" <?php
                                                     $del = 30 - $number9;
@@ -300,12 +301,12 @@ foreach ($post as $db) {
                                                     ?>><? echo 30 - $number9 ?></span>
                         </time>
                     </button>
-                    <button type="button" id="butCol" value="10" <?php
-                                                                    $del = 30 - $number10;
-                                                                    if ($del == 0) {
-                                                                        echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                    }
-                                                                    ?>>
+                    <button type="button" class="green" id="butCol" value="10" <?php
+                                                                                $del = 30 - $number10;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>10
                             <span class="circle" <?php
                                                     $del = 30 - $number10;
@@ -315,19 +316,19 @@ foreach ($post as $db) {
                                                     ?>><? echo 30 - $number10 ?></span>
                         </time>
                     </button>
-                    <button type="button" class="green butColModal11" id="butCol" value="11" <?php
-                                                                                                $del = 0;
-                                                                                                if ($del == 0) {
-                                                                                                    echo 'style="background: #ffbf00; color: #fff;" disabled';
-                                                                                                }
-                                                                                                ?>>
+                    <button type="button" class="butColModal11" id="butCol" value="11" <?php
+                                                                                        $del = 0;
+                                                                                        if ($del == 0) {
+                                                                                            echo 'style="background: none; color: #000;"';
+                                                                                        }
+                                                                                        ?>>
                         <time>11</span>
                         </time>
                     </button>
-                    <button type="button" class="red" value="12">
+                    <button type="button" value="12">
                         <time>12</time>
                     </button>
-                    <button type="button" class="red" value="13">
+                    <button type="button" value="13">
                         <time>13</time>
                     </button>
                     <button type="button" class="green butColModal14" id="butCol" value="14" <?php
@@ -363,17 +364,17 @@ foreach ($post as $db) {
                     <button type="button" id="butCol" value="16" <?php
                                                                     $del = 0;
                                                                     if ($del == 0) {
-                                                                        echo 'style="background: #ffbf00; color: #fff;" disabled';
+                                                                        echo 'style="background: none; color: #000;" disabled';
                                                                     }
                                                                     ?>>
                         <time>16</time>
                     </button>
-                    <button type="button" id="butCol" value="17" <?php
-                                                                    $del = 30 - $number17;
-                                                                    if ($del == 0) {
-                                                                        echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                    }
-                                                                    ?>>
+                    <button type="button" class="green" id="butCol" value="17" <?php
+                                                                                $del = 30 - $number17;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>17<span class="circle" <?php
                                                         $del = 30 - $number17;
                                                         if ($del == 0) {
@@ -384,7 +385,7 @@ foreach ($post as $db) {
                     <button type="button" id="butCol" value="18" <?php
                                                                     $del = 0;
                                                                     if ($del == 0) {
-                                                                        echo 'style="background: #ffbf00; color: #fff;" disabled';
+                                                                        echo 'style="background: none; color: #000;" disabled';
                                                                     }
                                                                     ?>>
                         <time>18</time>
@@ -392,10 +393,10 @@ foreach ($post as $db) {
                     <!-- <button class="today">
           <time>18</time>
         </button> -->
-                    <button type="button" class="red butColModal19" value="19">
+                    <button type="button" class="butColModal19" value="19">
                         <time>19</time>
                     </button>
-                    <button type="button" class="red" value="20">
+                    <button type="button" value="20">
                         <time>20</time>
                     </button>
                     <button type="button" class="green butColModal21" id="butCol" value="21" <?php
@@ -427,7 +428,7 @@ foreach ($post as $db) {
                     <button type="button" id="butCol" value="23" <?php
                                                                     $del = 0;
                                                                     if ($del == 0) {
-                                                                        echo 'style="background: #ffbf00; color: #fff;" disabled';
+                                                                        echo 'style="background: none; color: #000;" disabled';
                                                                     }
                                                                     ?>>
                         <time>23</time>
@@ -435,17 +436,17 @@ foreach ($post as $db) {
                     <button type="button" class="green butColModal24" id="butCol" value="24" <?php
                                                                                                 $del = 0;
                                                                                                 if ($del == 0) {
-                                                                                                    echo 'style="background: #ffbf00; color: #fff;" disabled';
+                                                                                                    echo 'style="background: none; color: #000;"';
                                                                                                 }
                                                                                                 ?>>
                         <time>24</time>
                     </button>
-                    <button type="button" id="butCol" value="25" <?php
-                                                                    $del = 30 - $number25;
-                                                                    if ($del == 0) {
-                                                                        echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                    }
-                                                                    ?>>
+                    <button type="button" class="green" id="butCol" value="25" <?php
+                                                                                $del = 30 - $number25;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>25<span class="circle" <?php
                                                         $del = 30 - $number25;
                                                         if ($del == 0) {
@@ -453,18 +454,18 @@ foreach ($post as $db) {
                                                         }
                                                         ?>><? echo 30 - $number25 ?></span></time>
                     </button>
-                    <button type="button" class="red" value="26">
+                    <button type="button" value="26">
                         <time>26</time>
                     </button>
-                    <button type="button" class="red butColModal27" value="27">
+                    <button type="button" class="butColModal27" value="27">
                         <time>27</time>
                     </button>
-                    <button type="button" id="butCol" value="28" <?php
-                                                                    $del = 30 - $number28;
-                                                                    if ($del == 0) {
-                                                                        echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                    }
-                                                                    ?>>
+                    <button type="button" class="green" id="butCol" value="28" <?php
+                                                                                $del = 30 - $number28;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>28<span class="circle" <?php
                                                         $del = 30 - $number28;
                                                         if ($del == 0) {
@@ -472,12 +473,12 @@ foreach ($post as $db) {
                                                         }
                                                         ?>><? echo 30 - $number28 ?></span></time>
                     </button>
-                    <button type="button" id="butCol" value="29" <?php
-                                                                    $del = 30 - $number29;
-                                                                    if ($del == 0) {
-                                                                        echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                    }
-                                                                    ?>>
+                    <button type="button" class="green" id="butCol" value="29" <?php
+                                                                                $del = 30 - $number29;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>29<span class="circle" <?php
                                                         $del = 30 - $number29;
                                                         if ($del == 0) {
@@ -485,12 +486,12 @@ foreach ($post as $db) {
                                                         }
                                                         ?>><? echo 30 - $number29 ?></span></time>
                     </button>
-                    <button type="button" id="butCol" value="30" <?php
-                                                                    $del = 30 - $number30;
-                                                                    if ($del == 0) {
-                                                                        echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                    }
-                                                                    ?>>
+                    <button type="button" class="green" id="butCol" value="30" <?php
+                                                                                $del = 30 - $number30;
+                                                                                if ($del == 0) {
+                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
+                                                                                }
+                                                                                ?>>
                         <time>30<span class="circle" <?php
                                                         $del = 30 - $number30;
                                                         if ($del == 0) {
@@ -511,15 +512,15 @@ foreach ($post as $db) {
                                                         }
                                                         ?>><? echo 30 - $number31 ?></span></time>
                     </button>
-                    <button type="button" class="red" style="opacity: .5; grid-column: 5; color: #ccc;">
+                    <button type="button" style="grid-column: 5; color: #ccc;">
                         <time>1
                         </time>
                     </button>
-                    <button type="button" class="red" style="opacity: .5; grid-column: 6; color: #ccc;">
+                    <button type="button" style="grid-column: 6; color: #ccc;">
                         <time>2
                         </time>
                     </button>
-                    <button type="button" class="red" style="opacity: .5; grid-column: 7; color: #ccc;">
+                    <button type="button" style="grid-column: 7; color: #ccc;">
                         <time>3
                         </time>
                     </button>
