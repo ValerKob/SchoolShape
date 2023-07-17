@@ -59,7 +59,7 @@ if (isset($_COOKIE["UserID"])) {
                 <img style="border-radius: 10px;" src="../assets/images/head.jpg" alt="">
             </div>
 
-            <div class="card" id="card2">
+            <div class="card">
                 <h4><b>Добрый день!</b> <br><br> Уважаемые жители Архангельска и Архангельской области, Илья Игоревич Иванкин - директор школы № 7, приглашает вас на экскурсию по 7-ой школе!
                     <br><br>Для ознакомления и общего развития!
                 </h4>
@@ -102,6 +102,11 @@ if (isset($_COOKIE["UserID"])) {
         } else {
                 ?><div class="container">
         <div class="card"><img style="border-radius: 10px;" src="../assets/images/head.jpg" alt=""></div>
+        <div class="card">
+            <h4><b>Добрый день!</b> <br><br> Уважаемые жители Архангельска и Архангельской области, Илья Игоревич Иванкин - директор школы № 7, приглашает вас на экскурсию по 7-ой школе!
+                <br><br>Для ознакомления и общего развития!
+            </h4>
+        </div>
         <div class="card">
             <h4 style="margin-bottom: 10;">Запись,
                 на экскурсию в Среднюю школу № 7</h4><b>Адрес:</b>г. Архангельск,
