@@ -1,0 +1,13 @@
+
+Добро пожаловать в Timeweb!
+Ваш аккаунт готов к работе
+Логин: cp41690
+
+Пароль: zh2g@mfQ9xzu
+
+cp41690.tw1.ru
+
+SSH cp41690@vh422.timeweb.ru
+
+name BD: cp41690_schoolSh
+password BD: TGFtYU5A
