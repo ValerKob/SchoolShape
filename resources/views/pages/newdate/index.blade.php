@@ -16,12 +16,10 @@ if (isset($_COOKIE["UserID"])) {
             </div>
 
             <div class="card">
-                <h4 style="margin-bottom: 10;">Вы уже записаны на экскурсию в Среднюю школу № 7, на <?php echo $_COOKIE["UserdataZa"] ?>.08.2023 в <?php echo $_COOKIE["UsertypeTime"] ?>:00 </h4>
-                <b>По Адресу:</b> г. Архангельск, территориальный округ Майская горка ул.
-                Карпогорская, д. 36<br><br>
-                <b>Контакты для справок:</b>
-                8 (921) 720 79-69<br><br>
-                <b>Email школы:</b> mbous7@inbox.ru
+                <h4 style="margin-bottom: 10;">Вы уже записаны на экскурсию в cреднюю школу № 7, на <?php echo $_COOKIE["UserdataZa"] ?>.08.2023 в <?php echo $_COOKIE["UsertypeTime"] ?>:00 </h4>
+                <b>По Адресу:</b>г. Архангельск,
+                территориальный округ Майская горка ул. Карпогорская,
+                д. 36<br><br><b>Контакты:</b> <a href="https://vk.com/mbous7">Группа школы.</a>
                 </p>
             </div>
 
