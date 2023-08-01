@@ -318,7 +318,7 @@ foreach ($post as $db) {
                         <time>10
                             <span class="circle" <?php
                                                     $del = 30 - $number10;
-                                                    if ($del == 0) {
+                                                    if ($del < 0) {
                                                         echo 'style="background: #735400;" ';
                                                     }
                                                     ?>><? echo 30 - $number10 ?></span>
