@@ -507,18 +507,8 @@ foreach ($post as $db) {
                                                         }
                                                         ?>><? echo 30 - $number30 ?></span></time>
                     </button>
-                    <button type="button" class="green butColModal31" id="butCol" value="31" <?php
-                                                                                                $del = 30 - $number31;
-                                                                                                if ($del == 0) {
-                                                                                                    echo 'style="background: #bd34ec; color: #fff;" disabled';
-                                                                                                }
-                                                                                                ?>>
-                        <time>31<span class="circle" <?php
-                                                        $del = 30 - $number31;
-                                                        if ($del == 0) {
-                                                            echo 'style="background: #735400;" ';
-                                                        }
-                                                        ?>><? echo 30 - $number31 ?></span></time>
+                    <button type="button" value="26">
+                        <time>31</time>
                     </button>
                     <button type="button" style="grid-column: 5; color: #ccc;">
                         <time>1
