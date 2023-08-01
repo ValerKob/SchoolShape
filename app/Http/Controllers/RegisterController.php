@@ -69,9 +69,11 @@ class RegisterController extends Controller
         $typeTime = $req->typeTime;
         if ($typeTime == 18) {
             $post = DB::table('applications')->get();
+            $post = $post->sortBy('dataZa');
             return view('pages.Ad134Qfg5d.index', compact('post', 'typeTime'));
         } else {
             $post = DB::table('applications')->get();
+            $post = $post->sortBy('dataZa');
             return view('pages.Ad134Qfg5d.index', compact('post', 'typeTime'));
         }
     }
