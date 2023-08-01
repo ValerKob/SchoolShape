@@ -321,7 +321,12 @@ foreach ($post as $db) {
                                                     if ($del <= 0) {
                                                         echo 'style="background: #735400;" ';
                                                     }
-                                                    ?>><? echo 30 - $number10 ?></span>
+                                                    ?>><? if ($del <= 0) {
+                                                            echo 0;
+                                                        } else {
+                                                            echo 30 - $number10;
+                                                        }
+                                                        ?></span>
                         </time>
                     </button>
                     <button type="button" class="butColModal11" id="butCol" value="11" <?php
