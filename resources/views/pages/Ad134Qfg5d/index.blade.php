@@ -34,11 +34,11 @@
             <button type="submit" class="action-button"><- Вернуться Назад</button>
         </form>
         <?php
-        // <div class="col col-1" data-label="ID:">' . $db->id . '</div>
         foreach ($post as $db) {
             if ($db->typeTime == $typeTime) {
                 echo '
                 <li class="table-row">
+                    <div class="col col-1" data-label="ID:">' . $db->id . '</div>
                     <div class="col col-2" data-label="ФИО:">' . $db->fio . '</div>
                     <div class="col col-2" data-label="Email:"> <br class="dNoneMobule">' . $db->email . '</div>
                     <div class="col col-2" data-label="Телефон:">' . $db->tel . '</div>
